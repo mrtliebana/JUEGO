@@ -1,0 +1,208 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;}
+
+
+.menu {grid-area: m;}
+.A {grid-area: A;}
+.B {grid-area: B;}
+.Z {grid-area: Z;}
+
+
+
+
+/* STYLE */
+
+.container div {box-sizing: border-box;}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width: 1440px){
+
+.container{
+	grid-gap:none;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20vh auto auto 20vh;
+    grid-template-areas:
+        "m m m m m" 
+		"A A A A A"
+		"B B B B B"
+		"Z Z Z Z Z";}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.x { 
+	height: 60px; 
+    margin-top: 30px;
+    
+    }
+
+.Z {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.z {
+	height: 40px; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    }
+
+
+.A {
+	align-self: center;
+    margin:auto;
+    display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    padding-right: 50px;
+	padding-left:  50px;}
+
+.B {align-self: center;
+    margin:auto;
+    margin-top: 30px;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.cajas { 
+    
+	width: 150px; 
+	height: 100%;  
+	float: left; 
+	margin: 10px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.cosa { 
+	width: 90px; 
+	height: 100%; 
+	padding: 0.5em; 
+	float: left; 
+	padding-right: 20px;
+	padding-left:  20px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+}
+
+
+
+
+
+
+@media all and (max-width: 748px){
+
+.container{
+	grid-gap:none;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15vh auto 5vh;
+    grid-template-areas:
+        "m m m m m m" 
+        "A A A A B B"
+		"Z Z Z Z Z Z";}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.x { 
+	height: 45px; 
+    margin-top: 30px;
+    margin-bottom: 0px;
+    
+    }
+
+.Z {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.z {
+	height: 27px; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    }
+
+
+
+.A {
+	align-self: center;
+    margin:auto;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.B {
+	align-self: center;
+    margin:auto;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+
+.cajas { 
+	width: 65%; 
+	height: 100%;  
+	float: left; 
+	margin:4px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.cosa { 
+	width: 30%; 
+	height: 100%; 
+	float:right; 
+	margin:-5px; 
+	padding-left: 0px;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+
+
+
+
+}
+

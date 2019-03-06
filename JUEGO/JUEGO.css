@@ -1,0 +1,206 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;}
+
+
+.menu {grid-area: m;}
+.A {grid-area: A;}
+.B {grid-area: B;}
+.C {grid-area: C;}
+
+
+
+/* STYLE */
+
+.container div {box-sizing: border-box;}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width: 1440px){
+
+.container{
+	grid-gap:none;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 30vh auto auto 30vh;
+    grid-template-areas:
+        "m m m m m m" 
+        "B B B B B B"
+		"A A A A A A"
+		"C C C C C C";}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.x { 
+	height: 60px; 
+    margin-top: 50px;
+    
+    }
+
+.C {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.z {
+	height: 40px; 
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    }
+
+
+
+ 	
+
+
+.A {align-self: center;
+    margin:auto;
+    display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.B {
+	align-self: center;
+    margin:auto;
+    margin-top: 55px;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+
+.circulos { 
+    
+	width: 80px; 
+	height: 100%;  
+	float: left; 
+	margin: 10px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.cosa { 
+	width: 70px; 
+	height: 100%; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px 10px 10px 0; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+}
+
+
+
+
+@media all and (max-width: 748px){
+
+.container{
+	grid-gap:none;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 25vh 45vh 27vh;
+    grid-template-areas:
+        "m m m m m" 
+        "A A B B B"
+		"C C C C C";}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.x { 
+	height: 45px; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+    }
+
+.C {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.z {
+	height: 27px; 
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    }
+
+
+
+
+
+.A {
+	align-self: center;
+    margin:auto;
+    padding-left: 40%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.B {
+	align-self: center;
+    margin:auto;
+    padding-right: 20%;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+
+.circulos { 
+	width: 30%; 
+	height: 100%;  
+	float: left; 
+	margin: 10px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.cosa { 
+	width: 60%; 
+	height: 100%; 
+	float: left; 
+	margin: 10px; 
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+}
+
